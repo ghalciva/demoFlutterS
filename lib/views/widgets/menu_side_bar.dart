@@ -49,7 +49,23 @@ class MenuSideBar extends StatelessWidget {
                 Row(
                   children: <Widget>[
                     Icon(
-                      Icons.dehaze
+                      Icons.restaurant_menu
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'Restaurantes', 
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height:20
+                ),
+                Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.history
                     ),
                     SizedBox(
                       width: 10,

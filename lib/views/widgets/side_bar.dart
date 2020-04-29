@@ -6,13 +6,13 @@ class SideBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Container(      
       decoration: BoxDecoration(
         border: Border(
           right: BorderSide(width: 1.0, color: Colors.grey[200]),
         ),
       ),
-      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 140),
+      padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -37,7 +37,7 @@ class SideBar extends StatelessWidget {
                       'Tu plan ', style: TextStyle(fontWeight: FontWeight.w300)
                     ),
                     Text(
-                      'Corporativo', style: TextStyle(color: Colors.red, fontWeight: FontWeight.w300),
+                      'Gratuito', style: TextStyle(color: Colors.red, fontWeight: FontWeight.w300),
                     ),
                   ],
                 ),
@@ -47,6 +47,22 @@ class SideBar extends StatelessWidget {
               height: 40
             ),
             MenuSideBar(),
+            SizedBox(
+              height: 80
+            ),
+            Row(
+              children: <Widget>[
+                Icon(
+                  Icons.exit_to_app, color: Colors.black38,
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  'Cerrar sesión', style: TextStyle(color: Colors.black45), 
+                ),
+              ],
+            ),
           ],
         ),
       )

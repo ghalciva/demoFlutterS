@@ -56,6 +56,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "custom_switch_button",
+      "rootUri": "file:///Users/juancarlosvelazquez/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/custom_switch_button-0.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///Users/juancarlosvelazquez/Downloads/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -102,6 +108,12 @@
       "rootUri": "file:///Users/juancarlosvelazquez/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.1.3",
       "packageUri": "lib/",
       "languageVersion": "2.0"
+    },
+    {
+      "name": "simple_animations",
+      "rootUri": "file:///Users/juancarlosvelazquez/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/simple_animations-1.3.12",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
     },
     {
       "name": "sky_engine",
@@ -170,7 +182,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-04-22T05:42:00.084418Z",
+  "generated": "2020-04-28T21:30:37.307955Z",
   "generator": "pub",
-  "generatorVersion": "2.8.0-dev.18.0.flutter-eea9717938"
+  "generatorVersion": "2.8.0-dev.20.10"
 }

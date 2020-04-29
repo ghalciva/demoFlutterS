@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:demoFlutter/views/widgets/credit_card.dart';
 
 class ContainerCard extends StatelessWidget {
   const ContainerCard({Key key}) : super(key: key);
@@ -7,34 +6,21 @@ class ContainerCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 30.0),
+      padding: const EdgeInsets.symmetric(horizontal: 50.0, vertical: 20.0),
       child: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            SizedBox(
-              height:30
-            ),
             Row(
               children: <Widget>[
-                Column(
+                Row(
                   children: <Widget>[
-                    Text('Chefs disponibles en', style: TextStyle(fontWeight: FontWeight.w300)),
-                    Text('Yara', style: TextStyle(fontWeight: FontWeight.bold, decoration: TextDecoration.underline)),
+                    Text('Lo más pedido', style: TextStyle(fontWeight: FontWeight.w300, fontSize: 24)),
                   ],
                 ),
-                Padding(padding: const EdgeInsets.symmetric(horizontal: 70)),
-                SizedBox(
-                  width: 100,
-                ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    CreditCard(),
-                  ],
-                )
               ],
             ),
+            SizedBox(height:10),
           ],
         ),
       )

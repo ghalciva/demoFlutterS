@@ -15,66 +15,58 @@ class RestaurantCard extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Row(
+            Column(
               children: <Widget>[
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     SizedBox(
-                      width: 170,
-                      child: Image.asset('assets/img.jpg'),
+                      width: 240,
+                      child: Image.asset('assets/secopollo.jpg'),
                     ),
                   ],
                 ),
-                Padding(padding: const EdgeInsets.symmetric(horizontal: 10)),
                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text('Seco de pollo', style: TextStyle(fontWeight: FontWeight.w400, fontSize: 15),),
+                    SizedBox(
+                      height: 5,
+                    ),
                     Row(
                       children: <Widget>[
-                        Text('Sabroso', style: TextStyle(fontWeight: FontWeight.bold),),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Icon(
-                          Icons.check_circle,
-                          size: 14,
-                        ),
+                        Icon(Icons.star, color: Colors.yellow,),
+                        SizedBox(width: 5,),
+                        Text('4.9 (283 reseñas)', style: TextStyle(fontWeight: FontWeight.w100, color: Colors.grey)),    
                       ],
                     ),
-                    Text('Comida típica variada', style: TextStyle(fontWeight: FontWeight.w100)),
-                    SizedBox(height:60),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text('\$ 3.50', style: TextStyle(fontWeight: FontWeight.w600)),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Row(
                       children: <Widget>[
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                          Text('PRECIO', style: TextStyle(color:Colors.grey[400]),),
-                          Text('\$ 4.00', style: TextStyle(fontWeight: FontWeight.w100)),
-                        ],),
-                        SizedBox(width:40),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                          Text('ORDENAR HASTA', style: TextStyle(color:Colors.grey[400]),),
-                          Text('10:00 AM', style: TextStyle(fontWeight: FontWeight.w100)),
-                        ],),      
-                        SizedBox(width:70),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                          FlatButton(
-                            child: Text('Ver menú', style: TextStyle(fontWeight: FontWeight.w100),),
-                            shape: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.red, width: 1),
-                              borderRadius: BorderRadius.circular(1),
-                            ),
-                            padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
-                            textColor: Colors.red,
-                            onPressed: () {},
+                        Icon(Icons.remove_circle, color: Colors.red,),
+                        Text('   1   '),
+                        Icon(Icons.add_circle, color: Colors.red,),
+                        SizedBox(width: 50),
+                        FlatButton(
+                          child: Text('Agregar', style: TextStyle(fontSize:13),),
+                          shape: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.red[700], width: 2),
+                            borderRadius: BorderRadius.circular(5),
                           ),
-                        ],),        
-                        SizedBox(width:20),        
+                          padding: const EdgeInsets.all(5),
+                          color: Colors.red[700],
+                          textColor: Colors.white,
+                          onPressed: (){},
+                        ),
                       ],
                     ),
                   ],
